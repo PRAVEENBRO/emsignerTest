@@ -17,6 +17,8 @@ export const EmsignerTestTab = () => {
 
 
     useEffect(() => {
+        console.log('test');
+        
         if (inTeams === true) {
             microsoftTeams.appInitialization.notifySuccess();
         } else {
