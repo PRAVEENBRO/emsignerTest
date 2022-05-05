@@ -1,0 +1,43 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.9/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.9",
+  "id": "{{APPLICATION_ID}}",
+  "version": "{{VERSION}}",
+  "packageName": "{{PACKAGE_NAME}}",
+  "developer": {
+    "name": "emsigner",
+    "websiteUrl": "https://{{PUBLIC_HOSTNAME}}",
+    "privacyUrl": "https://{{PUBLIC_HOSTNAME}}/privacy.html",
+    "termsOfUseUrl": "https://{{PUBLIC_HOSTNAME}}/tou.html"
+  },
+  "name": {
+    "short": "emsignerTest",
+    "full": "emsignerTest"
+  },
+  "description": {
+    "short": "E Mudra Demo",
+    "full": "Digital Signature Platform"
+  },
+  "icons": {
+    "outline": "em-logo.png",
+    "color": "sign-logo.png"
+  },
+  "accentColor": "#D85028",
+  "configurableTabs": [
+    {
+      "configurationUrl": "https://{{PUBLIC_HOSTNAME}}/emsignerTestTab/config.html?name={loginHint}&tenant={tid}&group={groupId}&theme={theme}",
+      "canUpdateConfiguration": true,
+      "scopes": ["team"],
+      "sharePointPreviewImage": "https://{{PUBLIC_HOSTNAME}}/assets/emsignerTestTab-preview.png",
+      "supportedSharePointHosts": ["sharePointFullPage", "sharePointWebPart"]
+    }
+  ],
+  "staticTabs": [],
+  "bots": [],
+  "connectors": [],
+  "composeExtensions": [],
+  "permissions": ["identity", "messageTeamMembers"],
+  "validDomains": ["{{PUBLIC_HOSTNAME}}"],
+  "showLoadingIndicator": false,
+  "isFullScreen": false
+}

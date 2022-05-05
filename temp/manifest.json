@@ -1,0 +1,53 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.9/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.9",
+  "id": "4ee36c60-c9df-11ec-a011-c3b42579a730",
+  "version": "0.0.1",
+  "packageName": "emsignertest",
+  "developer": {
+    "name": "emsigner",
+    "websiteUrl": "https://4f0d-2409-4071-d92-cf2a-f03c-3a98-d496-6e7f.ngrok.io",
+    "privacyUrl": "https://4f0d-2409-4071-d92-cf2a-f03c-3a98-d496-6e7f.ngrok.io/privacy.html",
+    "termsOfUseUrl": "https://4f0d-2409-4071-d92-cf2a-f03c-3a98-d496-6e7f.ngrok.io/tou.html"
+  },
+  "name": {
+    "short": "emsignerTest",
+    "full": "emsignerTest"
+  },
+  "description": {
+    "short": "TODO: add short description here",
+    "full": "TODO: add full description here"
+  },
+  "icons": {
+    "outline": "icon-outline.png",
+    "color": "icon-color.png"
+  },
+  "accentColor": "#D85028",
+  "configurableTabs": [
+    {
+      "configurationUrl": "https://4f0d-2409-4071-d92-cf2a-f03c-3a98-d496-6e7f.ngrok.io/emsignerTestTab/config.html?name={loginHint}&tenant={tid}&group={groupId}&theme={theme}",
+      "canUpdateConfiguration": true,
+      "scopes": [
+        "team"
+      ],
+      "sharePointPreviewImage": "https://4f0d-2409-4071-d92-cf2a-f03c-3a98-d496-6e7f.ngrok.io/assets/emsignerTestTab-preview.png",
+      "supportedSharePointHosts": [
+        "sharePointFullPage",
+        "sharePointWebPart"
+      ]
+    }
+  ],
+  "staticTabs": [],
+  "bots": [],
+  "connectors": [],
+  "composeExtensions": [],
+  "permissions": [
+    "identity",
+    "messageTeamMembers"
+  ],
+  "validDomains": [
+    "4f0d-2409-4071-d92-cf2a-f03c-3a98-d496-6e7f.ngrok.io"
+  ],
+  "showLoadingIndicator": false,
+  "isFullScreen": false
+}
